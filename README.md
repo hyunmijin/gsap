@@ -1,6 +1,5 @@
 <h1>Javascript Parallax Effect</h1>
 
-![image](https://github.com/hyunmijin/parallax/assets/125323270/e47f84b0-95b5-4ef5-90b3-2f183aa260d5)
 <br><br>
 
 https://hhh-gsap.netlify.app/
@@ -22,7 +21,6 @@ https://hhh-gsap.netlify.app/
 <br><br>
 <h1>GSAP Parallax Effect</h1>
 
-![image](https://github.com/hyunmijin/gsap/assets/125323270/7b2229d9-cccf-415a-99cd-cf491707fba3)
 <br><br>
 
 https://hhh-gsap.netlify.app/gsap01.html
