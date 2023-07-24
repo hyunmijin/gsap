@@ -5,7 +5,7 @@
 
 https://hhh-gsap.netlify.app/
 
-<h3>GSAP 효과들</h3>
+<h3>Parallax 효과들</h3>
 
 <ul>
   <li>01 메뉴 효과</li>
@@ -27,7 +27,7 @@ https://hhh-gsap.netlify.app/
 
 https://hhh-gsap.netlify.app/gsap01.html
 
-<h3>GSAP 효과들</h3>
+<h3>GSAP Parallax 효과들</h3>
 
 <ul>
   <li>01 애니메이션 효과</li>
