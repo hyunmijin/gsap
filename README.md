@@ -50,3 +50,15 @@ site : https://hhh-gsap.netlify.app/gsap01.html
   <li>09 이미지 효과</li>
   <li>10 메뉴이동 효과</li>
 </ul>
+<br>
+
+## 사용 스택
+<ul>
+  <li>HTML: HyperText Markup Language의 약자로, 웹 페이지의 구조를 정의하는 마크업 언어입니다.</li>
+  <li>CSS: Cascading Style Sheets의 약자로, HTML 문서의 스타일과 레이아웃을 지정하는 스타일 시트 언어입니다. reset.css와 parallax.css 파일을 링크하여 스타일을 적용합니다.</li>
+  <li>GSAP: GreenSock Animation Platform의 약자로, 자바스크립트 기반의 애니메이션 라이브러리입니다. GSAP를 사용하여 패럴럭스 효과를 구현합니다.</li>
+  <li>ScrollTrigger Plugin: GSAP의 플러그인 중 하나로, 스크롤 위치에 따라 애니메이션을 트리거하는 기능을 제공합니다.</li>
+  <li>ScrollToPlugin: GSAP의 플러그인 중 하나로, 스크롤 애니메이션을 위해 페이지를 특정 위치로 스크롤하는 기능을 제공합니다.</li>
+  <li>JavaScript: 웹 페이지에 동적인 기능을 추가하기 위해 사용되는 프로그래밍 언어입니다. 이 코드에서는 GSAP와 ScrollTrigger Plugin을 사용하여 스크롤 이벤트 처리와 메뉴 이동에 대한 기능을 구현합니다.</li>
+  <li>JavaScript: 웹 페이지에 동적인 기능을 추가하기 위해 사용되는 프로그래밍 언어입니다. 이 코드에서는 GSAP와 ScrollTrigger Plugin을 사용하여 스크롤 이벤트 처리와 메뉴 이동에 대한 기능을 구현합니다.</li>
+</ul>
