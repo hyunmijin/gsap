@@ -2,7 +2,7 @@
 
 <br><br>
 
-https://hhh-gsap.netlify.app/
+site : https://hhh-gsap.netlify.app/
 
 <h3>Parallax 효과들</h3>
 
@@ -23,7 +23,7 @@ https://hhh-gsap.netlify.app/
 
 <br><br>
 
-https://hhh-gsap.netlify.app/gsap01.html
+site : https://hhh-gsap.netlify.app/gsap01.html
 
 <h3>GSAP Parallax 효과들</h3>
 
