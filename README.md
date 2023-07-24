@@ -2,5 +2,3 @@
 
 ![image](https://github.com/hyunmijin/gsap/assets/125323270/7b2229d9-cccf-415a-99cd-cf491707fba3)
 <br><br>
-
-
