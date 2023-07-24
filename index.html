@@ -4,324 +4,240 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GSAP 패럴럭스 이펙트 01</title>
+    <title>패럴럭스 이펙트 01</title>
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/parallax.css" />
   </head>
-  <style>
-    #header {
-      position: fixed;
-      z-index: 10000;
-    }
-    .parallaxs__item {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #section1 {
-      background-color: #111;
-    }
-    #section2 {
-      background-color: #222;
-    }
-    #section3 {
-      background-color: #333;
-    }
-    #section4 {
-      background-color: #444;
-    }
-    #section5 {
-      background-color: #555;
-    }
-    #section6 {
-      background-color: #444;
-    }
-    #section7 {
-      background-color: #333;
-    }
-    #section8 {
-      background-color: #222;
-    }
-    #section9 {
-      background-color: #111;
-    }
-    .parallaxs__item__num {
-      position: absolute;
-      right: 20px;
-      bottom: 20px;
-      color: #fff;
-      font-size: 5vw;
-      z-index: 1000;
-      font-weight: 100;
-      font-size: 10vw;
-      font-family: "Lato";
-    }
-    .parallaxs__item__img {
-      width: 200px;
-      height: 200px;
-      background-size: cover;
-      border-radius: 20px;
-      transition: border-radius;
-    }
-    .parallaxs__item__img.active {
-      border-radius: 50%;
-    }
-    .parallaxs__item:nth-child(1) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect01-min.jpg);
-    }
-    .parallaxs__item:nth-child(2) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect02-min.jpg);
-    }
-    .parallaxs__item:nth-child(3) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect04-min.jpg);
-    }
-    .parallaxs__item:nth-child(4) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect04-min.jpg);
-    }
-    .parallaxs__item:nth-child(5) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect05-min.jpg);
-    }
-    .parallaxs__item:nth-child(6) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect06-min.jpg);
-    }
-    .parallaxs__item:nth-child(7) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect07-min.jpg);
-    }
-    .parallaxs__item:nth-child(8) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect08-min.jpg);
-    }
-    .parallaxs__item:nth-child(9) .parallaxs__item__img {
-      background-image: url(./img/parallaxEffect09-min.jpg);
-    }
-  </style>
 
   <body class="img01 bg01 font10">
     <header id="header">
-      <h1>GSAP Parallax Effect01</h1>
-      <p>GSAP 패럴럭스 이펙트 : 애니메이션</p>
+      <h1>Javascript Parallax Effect01</h1>
+      <p>패럴럭스 이펙트 : 메뉴 효과</p>
       <ul>
-        <li class="active"><a href="gsap01.html">1</a></li>
-        <li><a href="gsap02.html">2</a></li>
-        <li><a href="gsap02.html">3</a></li>
-        <li><a href="gsap04.html">4</a></li>
-        <li><a href="gsap05.html">5</a></li>
-        <li><a href="gsap06.html">6</a></li>
-        <li><a href="gsap07.html">7</a></li>
-        <li><a href="gsap08.html">8</a></li>
-        <li><a href="gsap09.html">9</a></li>
-        <li><a href="gsap10.html">10</a></li>
+        <li class="active"><a href="parallaxEffect01.html">1</a></li>
+        <li><a href="parallaxEffect02.html">2</a></li>
+        <li><a href="parallaxEffect03.html">3</a></li>
+        <li><a href="parallaxEffect04.html">4</a></li>
+        <li><a href="parallaxEffect05.html">5</a></li>
+        <li><a href="parallaxEffect06.html">6</a></li>
+        <li><a href="parallaxEffect07.html">7</a></li>
       </ul>
     </header>
     <!-- //header -->
 
+    <nav class="parallax__nav">
+      <ul>
+        <li class="active"><a href="#section1">메뉴1</a></li>
+        <li><a href="#section2">메뉴2</a></li>
+        <li><a href="#section3">메뉴3</a></li>
+        <li><a href="#section4">메뉴4</a></li>
+        <li><a href="#section5">메뉴5</a></li>
+        <li><a href="#section6">메뉴6</a></li>
+        <li><a href="#section7">메뉴7</a></li>
+        <li><a href="#section8">메뉴8</a></li>
+        <li><a href="#section9">메뉴9</a></li>
+      </ul>
+    </nav>
+    <!-- //parallax__nav -->
+
     <main id="main">
-      <div class="parallaxs__wrap">
-        <section id="section1" class="parallaxs__item">
-          <span class="parallaxs__item__num">01</span>
-          <div class="parallaxs__item__img"></div>
+      <div class="parallax__wrap">
+        <section id="section1" class="parallax__item">
+          <span class="parallax__item__num">01</span>
+          <h2 class="parallax__item__title">Section1</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            네가 믿을 수 있다면, 넌 이미 반 이긴 것이다.
+          </p>
         </section>
         <!-- //section1 -->
 
-        <section id="section2" class="parallaxs__item">
-          <span class="parallaxs__item__num">02</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section2" class="parallax__item">
+          <span class="parallax__item__num">02</span>
+          <h2 class="parallax__item__title">Section2</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">성공의 비결은 시작하는 것이다.</p>
         </section>
         <!-- //section2 -->
 
-        <section id="section3" class="parallaxs__item">
-          <span class="parallaxs__item__num">03</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section3" class="parallax__item">
+          <span class="parallax__item__num">03</span>
+          <h2 class="parallax__item__title">Section3</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            불가능은 무엇인가? 단지 미래의 가능성을 아직 발견하지 못한 것일
+            뿐이다.
+          </p>
         </section>
         <!-- //section3 -->
 
-        <section id="section4" class="parallaxs__item">
-          <span class="parallaxs__item__num">04</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section4" class="parallax__item">
+          <span class="parallax__item__num">04</span>
+          <h2 class="parallax__item__title">Section4</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            계획이 없다면 실패를 계획한 것이다.
+          </p>
         </section>
         <!-- //section4 -->
 
-        <section id="section5" class="parallaxs__item">
-          <span class="parallaxs__item__num">05</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section5" class="parallax__item">
+          <span class="parallax__item__num">05</span>
+          <h2 class="parallax__item__title">Section5</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            내일의 나를 더 나은 사람으로 만들기 위해 오늘 노력하라.
+          </p>
         </section>
         <!-- //section5 -->
 
-        <section id="section6" class="parallaxs__item">
-          <span class="parallaxs__item__num">06</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section6" class="parallax__item">
+          <span class="parallax__item__num">06</span>
+          <h2 class="parallax__item__title">Section6</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            기회는 문을 두드리지 않는다. 우리가 문을 열어야 한다.
+          </p>
         </section>
         <!-- //section6 -->
 
-        <section id="section7" class="parallaxs__item">
-          <span class="parallaxs__item__num">07</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section7" class="parallax__item">
+          <span class="parallax__item__num">07</span>
+          <h2 class="parallax__item__title">Section7</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            성공은 무엇보다 인내와 노력을 요구한다.
+          </p>
         </section>
         <!-- //section7 -->
 
-        <section id="section8" class="parallaxs__item">
-          <span class="parallaxs__item__num">08</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section8" class="parallax__item">
+          <span class="parallax__item__num">08</span>
+          <h2 class="parallax__item__title">Section8</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">어려움은 성장의 씨앗이다.</p>
         </section>
         <!-- //section8 -->
 
-        <section id="section9" class="parallaxs__item">
-          <span class="parallaxs__item__num">09</span>
-          <div class="parallaxs__item__img"></div>
-        </section>
-        <!-- //section9 -->
-
-        <section id="section10" class="parallaxs__item">
-          <span class="parallaxs__item__num">end</span>
-          <div class="parallaxs__item__img"></div>
+        <section id="section9" class="parallax__item">
+          <span class="parallax__item__num">09</span>
+          <h2 class="parallax__item__title">Section9</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            가장 큰 모험은, 우리가 꿈꾸는 세상을 만들기 위한 모험이다.
+          </p>
         </section>
         <!-- //section9 -->
       </div>
     </main>
     <!-- //main -->
 
-    <!-- <aside class="parallax__info">
-        <div class="scroll">scrollTop : <span>0</span>ps</div>
-    </aside> -->
+    <aside class="parallax__info">
+      <div class="scroll">scrollTop : <span>0</span>ps</div>
+      <div class="info">
+        <ul>
+          <li>#section1 offset() : <span class="offset1">0</span>px</li>
+          <li>#section2 offset() : <span class="offset2">0</span>px</li>
+          <li>#section3 offset() : <span class="offset3">0</span>px</li>
+          <li>#section4 offset() : <span class="offset4">0</span>px</li>
+          <li>#section5 offset() : <span class="offset5">0</span>px</li>
+          <li>#section6 offset() : <span class="offset6">0</span>px</li>
+          <li>#section7 offset() : <span class="offset7">0</span>px</li>
+          <li>#section8 offset() : <span class="offset8">0</span>px</li>
+          <li>#section9 offset() : <span class="offset9">0</span>px</li>
+        </ul>
+      </div>
+    </aside>
     <!-- parallax__info -->
 
-    <progress max="100" value="0"></progress>
-    <!-- //progress -->
+    <footer id="footer">
+      <a href="mailto:hunmi961119@gmail.com">hunmi961119@gmail.com</a>
+    </footer>
+    <!-- //footer -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script>
-      const box1 = document.querySelector("#section1 .parallaxs__item__img");
-      const box2 = document.querySelector("#section2 .parallaxs__item__img");
-      const box3 = document.querySelector("#section3 .parallaxs__item__img");
-      const box4 = document.querySelector("#section4 .parallaxs__item__img");
-      const box5 = document.querySelector("#section5 .parallaxs__item__img");
-      const box6 = document.querySelector("#section6 .parallaxs__item__img");
-      const box7 = document.querySelector("#section7 .parallaxs__item__img");
-      const box8 = document.querySelector("#section8 .parallaxs__item__img");
-      const box9 = document.querySelector("#section9 .parallaxs__item__img");
+      window.addEventListener("scroll", () => {
+        let scrollTop =
+          window.pageYOffset ||
+          window.scrollY ||
+          document.documentElement.scrollTop;
 
-      // 01
-      gsap.to(box1, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-      });
+        document.querySelectorAll(".parallax__item").forEach((item, index) => {
+          if (scrollTop >= item.offsetTop - 2) {
+            document.querySelectorAll(".parallax__nav li").forEach((li) => {
+              li.classList.remove("active");
+            });
+            document
+              .querySelector(".parallax__nav li:nth-child(" + (index + 1) + ")")
+              .classList.add("active");
+          }
+        });
 
-      // 02 : trigger
-      gsap.to(box2, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box2,
-        },
-      });
+        document.querySelectorAll(".parallax__nav li a").forEach((li) => {
+          li.addEventListener("click", (e) => {
+            e.preventDefault();
+            document.querySelector(li.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
 
-      // 03 : toggleAction  "onEnter, onLeave, onEnterBack, onLeaveBack"
-      gsap.to(box3, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box3,
-          toggleActions: "play none none none", //기본값 // 속성값들 play, pause, resume, reset, restart, complate, reverse, none
-        },
-      });
+        //info
+        document.querySelector(".scroll span").innerText = parseInt(scrollTop);
 
-      // 04 : toggleActions
-      gsap.to(box4, {
-        duration: 4,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box4,
-          toggleActions: "play pause reverse none", //기본값 // 속성값들 play, pause, resume, reset, restart, complate, reverse, none
-        },
-      });
+        // document.querySelector(".info .offset1").innerText = document.getElementById("section1").offsetTop;
+        // document.querySelector(".info .offset2").innerText = document.getElementById("section2").offsetTop;
+        // document.querySelector(".info .offset3").innerText = document.getElementById("section3").offsetTop;
+        // document.querySelector(".info .offset4").innerText = document.getElementById("section4").offsetTop;
+        // document.querySelector(".info .offset5").innerText = document.getElementById("section5").offsetTop;
+        // document.querySelector(".info .offset6").innerText = document.getElementById("section6").offsetTop;
+        // document.querySelector(".info .offset7").innerText = document.getElementById("section7").offsetTop;
+        // document.querySelector(".info .offset8").innerText = document.getElementById("section8").offsetTop;
+        // document.querySelector(".info .offset9").innerText = document.getElementById("section9").offsetTop;
 
-      // 05 : start, end
-      gsap.to(box5, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box5,
-          start: "top 50%",
-          markers: false,
-        },
-      });
+        // for문
+        // for(let i=1; i<=9; i++){
+        //     document.querySelector(`.info .offset${i}`).innerText = document.getElementById(`section${i}`).offsetTop;
+        // }
 
-      // 06 : scrub
-      gsap.to(box6, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box6,
-          start: "top 50%",
-          end: "bottom 20%",
-          scrub: true, //true, 1, 2...
-          markers: false,
-        },
-      });
+        // document.querySelectorAll(".info span").forEach((e, i) => {
+        //     e.innerHTML = document.getElementById(`section${i + 1}`).offsetTop;
+        // });
 
-      // 07 : pin
-      gsap.to(box7, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box7,
-          start: "top 50%",
-          end: "bottom 100px",
-          pin: true,
-          scrub: true,
-          markers: false,
-        },
-      });
+        const infoSpans = document.querySelectorAll(".info span");
 
-      // 08 : callback
-      gsap.to(box8, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box8,
-          start: "top center",
-          end: "bottom 30%",
-          scrub: true,
-          markers: false,
-          // onEnter: () => {console.log("onEnter")},
-          // onLeave: () => {console.log("onLeave")},
-          // onEnterBack: () => {console.log("onEnterBack")},
-          // onLeaveBack: () => {console.log("onLeaveBack")}
-          onUpdate: (self) => {
-            console.log("onUpdate", self.progress.toFixed(3));
-          },
-          onToggle: (self) => {
-            console.log("onToggle", self.isActive);
-          },
-        },
-      });
+        // for (let i in infoSpans) {
+        //     const e = infoSpans[i];
+        //     e.innerHTML = document.getElementById(`section${parseInt(i) + 1}`).offsetTop;
+        // }
 
-      // 09 : toggleClass
-      gsap.to(box9, {
-        duration: 2,
-        x: 500,
-        rotation: 360,
-        scrollTrigger: {
-          trigger: box9,
-          start: "top center",
-          end: "bottom 30%",
-          scrub: true,
-          markers: true,
-          toggleClass: "active",
-          id: "box9",
-        },
+        for (const e of infoSpans) {
+          const index = Array.from(infoSpans).indexOf(e);
+          e.innerHTML = document.getElementById(
+            `section${index + 1}`
+          ).offsetTop;
+        }
+
+        // forEach, forin, forof문으로 바꾸기 미션
       });
     </script>
   </body>
