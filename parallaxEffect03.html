@@ -1,242 +1,252 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>패럴럭스 이펙트 03</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/parallax.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/parallax.css" />
     <style>
-        .parallax__nav {
-            top: -100px;
-            transition: all 0.6s;
-        }
+      .parallax__nav {
+        top: -100px;
+        transition: all 0.6s;
+      }
 
-        .parallax__nav.show {
-            top: 10px;
-        }
+      .parallax__nav.show {
+        top: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body class="img01 bg01 font10">
+  <body class="img01 bg01 font10">
     <header id="header">
-        <h1>Javascript Parallax Effect03</h1>
-        <p>패럴럭스 이펙트 : 숨김 메뉴 / 탑 버튼</p>
-        <ul>
-            <li><a href="parallaxEffect01.html">1</a></li>
-            <li><a href="parallaxEffect02.html">2</a></li>
-            <li class="active"><a href="parallaxEffect03.html">3</a></li>
-            <li><a href="parallaxEffect04.html">4</a></li>
-            <li><a href="parallaxEffect05.html">5</a></li>
-            <li><a href="parallaxEffect06.html">6</a></li>
-            <li><a href="parallaxEffect07.html">7</a></li>
-        </ul>
+      <h1>Javascript Parallax Effect03</h1>
+      <p>패럴럭스 이펙트 : 숨김 메뉴 / 탑 버튼</p>
+      <ul>
+        <li><a href="parallaxEffect01.html">1</a></li>
+        <li><a href="parallaxEffect02.html">2</a></li>
+        <li class="active"><a href="parallaxEffect03.html">3</a></li>
+        <li><a href="parallaxEffect04.html">4</a></li>
+        <li><a href="parallaxEffect05.html">5</a></li>
+        <li><a href="parallaxEffect06.html">6</a></li>
+        <li><a href="parallaxEffect07.html">7</a></li>
+        <li><a href="parallaxEffect08.html">8</a></li>
+        <li><a href="parallaxEffect09.html">9</a></li>
+      </ul>
     </header>
     <!-- //header -->
 
     <nav class="parallax__nav show">
-        <ul>
-            <li class="active"><a href="#section1">메뉴1</a></li>
-            <li><a href="#section2">메뉴2</a></li>
-            <li><a href="#section3">메뉴3</a></li>
-            <li><a href="#section4">메뉴4</a></li>
-            <li><a href="#section5">메뉴5</a></li>
-            <li><a href="#section6">메뉴6</a></li>
-            <li><a href="#section7">메뉴7</a></li>
-            <li><a href="#section8">메뉴8</a></li>
-            <li><a href="#section9">메뉴9</a></li>
-        </ul>
+      <ul>
+        <li class="active"><a href="#section1">메뉴1</a></li>
+        <li><a href="#section2">메뉴2</a></li>
+        <li><a href="#section3">메뉴3</a></li>
+        <li><a href="#section4">메뉴4</a></li>
+        <li><a href="#section5">메뉴5</a></li>
+        <li><a href="#section6">메뉴6</a></li>
+        <li><a href="#section7">메뉴7</a></li>
+        <li><a href="#section8">메뉴8</a></li>
+        <li><a href="#section9">메뉴9</a></li>
+      </ul>
     </nav>
     <!-- //parallax__nav -->
 
     <main id="main">
-        <div class="parallax__wrap">
-            <section id="section1" class="parallax__item">
-                <span class="parallax__item__num">01</span>
-                <h2 class="parallax__item__title">Section1</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">네가 믿을 수 있다면, 넌 이미 반 이긴 것이다.</p>
-            </section>
-            <!-- //section1 -->
+      <div class="parallax__wrap">
+        <section id="section1" class="parallax__item">
+          <span class="parallax__item__num">01</span>
+          <h2 class="parallax__item__title">Section1</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            네가 믿을 수 있다면, 넌 이미 반 이긴 것이다.
+          </p>
+        </section>
+        <!-- //section1 -->
 
-            <section id="section2" class="parallax__item">
-                <span class="parallax__item__num">02</span>
-                <h2 class="parallax__item__title">Section2</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">성공의 비결은 시작하는 것이다.</p>
-            </section>
-            <!-- //section2 -->
+        <section id="section2" class="parallax__item">
+          <span class="parallax__item__num">02</span>
+          <h2 class="parallax__item__title">Section2</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">성공의 비결은 시작하는 것이다.</p>
+        </section>
+        <!-- //section2 -->
 
-            <section id="section3" class="parallax__item">
-                <span class="parallax__item__num">03</span>
-                <h2 class="parallax__item__title">Section3</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">불가능은 무엇인가? 단지 미래의 가능성을 아직 발견하지 못한 것일 뿐이다.</p>
-            </section>
-            <!-- //section3 -->
+        <section id="section3" class="parallax__item">
+          <span class="parallax__item__num">03</span>
+          <h2 class="parallax__item__title">Section3</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            불가능은 무엇인가? 단지 미래의 가능성을 아직 발견하지 못한 것일
+            뿐이다.
+          </p>
+        </section>
+        <!-- //section3 -->
 
-            <section id="section4" class="parallax__item">
-                <span class="parallax__item__num">04</span>
-                <h2 class="parallax__item__title">Section4</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">계획이 없다면 실패를 계획한 것이다.</p>
-            </section>
-            <!-- //section4 -->
+        <section id="section4" class="parallax__item">
+          <span class="parallax__item__num">04</span>
+          <h2 class="parallax__item__title">Section4</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            계획이 없다면 실패를 계획한 것이다.
+          </p>
+        </section>
+        <!-- //section4 -->
 
-            <section id="section5" class="parallax__item">
-                <span class="parallax__item__num">05</span>
-                <h2 class="parallax__item__title">Section5</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">내일의 나를 더 나은 사람으로 만들기 위해 오늘 노력하라.</p>
-            </section>
-            <!-- //section5 -->
+        <section id="section5" class="parallax__item">
+          <span class="parallax__item__num">05</span>
+          <h2 class="parallax__item__title">Section5</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            내일의 나를 더 나은 사람으로 만들기 위해 오늘 노력하라.
+          </p>
+        </section>
+        <!-- //section5 -->
 
-            <section id="section6" class="parallax__item">
-                <span class="parallax__item__num">06</span>
-                <h2 class="parallax__item__title">Section6</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">기회는 문을 두드리지 않는다. 우리가 문을 열어야 한다.</p>
-            </section>
-            <!-- //section6 -->
+        <section id="section6" class="parallax__item">
+          <span class="parallax__item__num">06</span>
+          <h2 class="parallax__item__title">Section6</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            기회는 문을 두드리지 않는다. 우리가 문을 열어야 한다.
+          </p>
+        </section>
+        <!-- //section6 -->
 
-            <section id="section7" class="parallax__item">
-                <span class="parallax__item__num">07</span>
-                <h2 class="parallax__item__title">Section7</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">성공은 무엇보다 인내와 노력을 요구한다.</p>
-            </section>
-            <!-- //section7 -->
+        <section id="section7" class="parallax__item">
+          <span class="parallax__item__num">07</span>
+          <h2 class="parallax__item__title">Section7</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            성공은 무엇보다 인내와 노력을 요구한다.
+          </p>
+        </section>
+        <!-- //section7 -->
 
-            <section id="section8" class="parallax__item">
-                <span class="parallax__item__num">08</span>
-                <h2 class="parallax__item__title">Section8</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">어려움은 성장의 씨앗이다.</p>
-            </section>
-            <!-- //section8 -->
+        <section id="section8" class="parallax__item">
+          <span class="parallax__item__num">08</span>
+          <h2 class="parallax__item__title">Section8</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">어려움은 성장의 씨앗이다.</p>
+        </section>
+        <!-- //section8 -->
 
-            <section id="section9" class="parallax__item">
-                <span class="parallax__item__num">09</span>
-                <h2 class="parallax__item__title">Section9</h2>
-                <figure class="parallax__item__imgWrap">
-                    <div class="parallax__item__img"></div>
-                </figure>
-                <p class="parallax__item__desc">가장 큰 모험은, 우리가 꿈꾸는 세상을 만들기 위한 모험이다.</p>
-            </section>
-            <!-- //section9 -->
-        </div>
+        <section id="section9" class="parallax__item">
+          <span class="parallax__item__num">09</span>
+          <h2 class="parallax__item__title">Section9</h2>
+          <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+          </figure>
+          <p class="parallax__item__desc">
+            가장 큰 모험은, 우리가 꿈꾸는 세상을 만들기 위한 모험이다.
+          </p>
+        </section>
+        <!-- //section9 -->
+      </div>
     </main>
     <!-- //main -->
 
     <aside class="parallax__info">
-        <div class="scroll">scrollTop : <span>0</span>ps</div>
+      <div class="scroll">scrollTop : <span>0</span>ps</div>
     </aside>
     <!-- parallax__info -->
 
     <div class="parallax__top">
-        <a href="#header">Top</a>
+      <a href="#header">Top</a>
     </div>
     <!-- //parallax__top -->
 
     <footer id="footer">
-        <a href="mailto:hunmi961119@gmail.com">hunmi961119@gmail.com</a>
+      <a href="mailto:hunmi961119@gmail.com">hunmi961119@gmail.com</a>
     </footer>
     <!-- //footer -->
 
     <script>
-        //01메뉴
-        // window.addEventListener("scroll", () => {
-        //     let scrollTop = window.pageXOffset || window.scrollY;
-        //     let scrollHeight = window.innerHeight;
+      //01메뉴
+      // window.addEventListener("scroll", () => {
+      //     let scrollTop = window.pageXOffset || window.scrollY;
+      //     let scrollHeight = window.innerHeight;
 
-        //     if (scrollTop > 0) {
-        //         document.querySelector(".parallax__nav").classList.add("show");
-        //     } else {
-        //         document.querySelector(".parallax__nav").classList.remove("show");
-        //     }
+      //     if (scrollTop > 0) {
+      //         document.querySelector(".parallax__nav").classList.add("show");
+      //     } else {
+      //         document.querySelector(".parallax__nav").classList.remove("show");
+      //     }
 
+      //     document.querySelector(".scroll span").innerText = Math.round(scrollTop);
+      // });
 
-        //     document.querySelector(".scroll span").innerText = Math.round(scrollTop);
-        // });
+      //문서의 높이를 구하는 방법
+      // console.log(document.body.scrollHeight)    //상단ㅇ
+      // console.log(document.body.offsetHeight)    //상단ㅇ
+      // console.log(document.documentElement.clientHeight)
 
-        //문서의 높이를 구하는 방법
-        // console.log(document.body.scrollHeight)    //상단ㅇ
-        // console.log(document.body.offsetHeight)    //상단ㅇ
-        // console.log(document.documentElement.clientHeight)
+      window.addEventListener("scroll", () => {
+        let scrollTop = window.pageXOffset || window.scrollY;
 
+        if (scrollTop > document.body.scrollHeight - 1000) {
+          document.querySelector(".parallax__top").classList.add("show");
+        } else {
+          document.querySelector(".parallax__top").classList.remove("show");
+        }
+      });
 
-        window.addEventListener("scroll", () => {
-            let scrollTop = window.pageXOffset || window.scrollY;
-
-
-            if (scrollTop > document.body.scrollHeight - 1000) {
-                document.querySelector(".parallax__top").classList.add("show");
-            } else {
-                document.querySelector(".parallax__top").classList.remove("show");
-            }
-
+      // 탑버튼 애니메이션
+      document
+        .querySelector(".parallax__top a")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         });
 
+      // 03. 메뉴
+      let nowScroll = true;
+      let lastScroll = 0;
 
-        // 탑버튼 애니메이션
-        document.querySelector(".parallax__top a").addEventListener("click", function (e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
+      function scrollProgress() {
+        nowScroll = true;
+        setInterval(() => {
+          if (nowScroll) {
+            nowScroll = false;
+            hasScrool();
+          }
+        }, 300);
+      }
 
-        // 03. 메뉴
-        let nowScroll = true;
-        let lastScroll = 0;
+      function hasScrool() {
+        let scrollTop = window.pageXOffset || window.scrollY;
 
-        function scrollProgress() {
-            nowScroll = true;
-            setInterval(() => {
-                if (nowScroll) {
-                    nowScroll = false;
-                    hasScrool();
-                }
-            }, 300);
+        if (scrollTop < lastScroll) {
+          document.querySelector(".parallax__nav").classList.add("show");
+        } else {
+          document.querySelector(".parallax__nav").classList.remove("show");
         }
+        lastScroll = scrollTop;
+        document.querySelector(".scroll span").innerText =
+          Math.round(scrollTop);
+      }
 
-        function hasScrool() {
-            let scrollTop = window.pageXOffset || window.scrollY;
-
-            if (scrollTop < lastScroll) {
-                document.querySelector(".parallax__nav").classList.add("show");
-            } else {
-                document.querySelector(".parallax__nav").classList.remove("show");
-            }
-            lastScroll = scrollTop;
-            document.querySelector(".scroll span").innerText = Math.round(scrollTop);
-        }
-
-        window.addEventListener("scroll", scrollProgress);
+      window.addEventListener("scroll", scrollProgress);
     </script>
-
-
-
-</body>
-
+  </body>
 </html>
